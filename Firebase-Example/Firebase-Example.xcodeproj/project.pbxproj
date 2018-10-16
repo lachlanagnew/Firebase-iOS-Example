@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73329A6A2174581300C90E50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73329A692174581300C90E50 /* GoogleService-Info.plist */; };
+		73329A6F2175850100C90E50 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73329A6E2175850100C90E50 /* UIColor+Hex.swift */; };
 		739EBA5C21744C770001D7D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739EBA5B21744C770001D7D2 /* AppDelegate.swift */; };
 		739EBA5E21744C770001D7D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739EBA5D21744C770001D7D2 /* ViewController.swift */; };
 		739EBA6121744C770001D7D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739EBA5F21744C770001D7D2 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		581DDA5459E884E4ACFB1F58 /* Pods-Firebase-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-Example/Pods-Firebase-Example.release.xcconfig"; sourceTree = "<group>"; };
 		6E43278E94D91D0147ADE798 /* Pods-Firebase-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-Example/Pods-Firebase-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		73329A692174581300C90E50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73329A6E2175850100C90E50 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Hex.swift"; path = "Firebase-Example/Extensions/UIColor+Hex.swift"; sourceTree = SOURCE_ROOT; };
 		739EBA5821744C770001D7D2 /* Firebase-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		739EBA5B21744C770001D7D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		739EBA5D21744C770001D7D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		73329A6C21745A8900C90E50 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				73329A6E2175850100C90E50 /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,15 +219,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Firebase-Example/Pods-Firebase-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -258,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73329A6F2175850100C90E50 /* UIColor+Hex.swift in Sources */,
 				739EBA5E21744C770001D7D2 /* ViewController.swift in Sources */,
 				739EBA5C21744C770001D7D2 /* AppDelegate.swift in Sources */,
 			);
